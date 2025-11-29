@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Connect - Sitemap</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Background with a gym image */
+    body {
+      background: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600") no-repeat center center/cover;
+      color: white;
+      padding: 20px;
+    }
+
+    /* Dark overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+
+    /* Page title */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ff6600;
+    }
+
+    /* Sitemap main box */
+    .sitemap {
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid #ff6600;
+    }
+
+    /* Section boxes */
+    details {
+      margin: 10px 0;
+      background-color: rgba(255, 102, 0, 0.1);
+      border: 1px solid #ff6600;
+      border-radius: 5px;
+    }
+
+    /* Section titles */
+    summary {
+      padding: 10px 15px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #ff6600;
+    }
+
+    /* List inside each section */
+    ul {
+      list-style: none;
+      padding: 10px 25px;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* List items */
+    ul li {
+      padding: 5px 0;
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    /* Add a small orange arrow before each item */
+    ul li::before {
+      content: "▶ ";
+      color: #ff6600;
+    }
+
+    /* Responsive design for small screens */
+    @media (max-width: 600px) {
+      .sitemap {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      summary {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+      
+  <h1>SITEMAP</h1>
+
+  <div class="sitemap">
+    <details>
+      <summary>Homepage</summary>
+      <ul>
+        <li>Our fitness activities</li>
+        <li>Our services</li>
+        <li>Motivation section</li>
+        <li>Our members comment</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>our offerings</summary>
+      <ul>
+        <li>Cycling page</li>
+        <li>Swimming page</li>
+        <li>Sports and fitness page</li>
+        <li>Membership page</li>
+         <li>Salon and Spa page</li>
+          <li>Gallery page</li>
+           <li>Equipments page</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>About-us</summary>
+      <ul>
+        <li>Our story</li>
+        <li>Our value</li>
+         <li>Our people</li>
+          <li>Our culture</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>FAqs</summary>
+      <ul>
+        <li>QNA</li>
+        <li>contact us button</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Enquiry form</summary>
+      <ul>
+        <li>form</li>
+      </ul>
+    </details>
+
+  
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+    "gallery": [
+        {
+            "title":"Cycling",
+            "image":"assets/cycling.png",
+            "link":"cycling.html"
+        },
+        {
+            "title":"Swimming",
+            "image":"assets/swimming.png",
+            "link":"swimming.html"
+        },
+         {
+            "title":"Sport & Fitness",
+            "image":"assets/sport fitness.png",
+            "link":"sports.html"
+        },
+         {
+            "title":"Fitness equipment",
+            "image":"assets/equipment.png",
+            "link":"equipments.html"
+        },
+         {
+            "title":"Salon & Spa",
+            "image":"assets/salon.png",
+            "link":"salon.html"
+        },
+         {
+            "title":"Group Exercise",
+            "image":"assets/group excercise.png",
+            "link":"group exercise.html"
+        }
+    ]
+}

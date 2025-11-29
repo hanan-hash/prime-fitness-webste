@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-background-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('darkgym.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 100%;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.hr{
+    padding: 0%;
+    margin: 0%;
+    border-top: 1px solid
+}
+.section-title {
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.mention1 {
+    color: #ff6600;
+    font-weight: 600;
+}
+
+.accordion-item {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    border: 2px solid #ff6600;
+    box-shadow: 0 0 15px rgba(227, 153, 74, 0.3);
+    transform: translateY(-2px);
+}
+
+.accordion-button {
+    background-color: #1f1f1f;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 20px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #1f1f1f;
+    color: white;
+    box-shadow: none;
+    font-weight: 700;
+}
+
+.accordion-button:hover {
+    color: #fff;
+    background-color: #2a2a2a;
+}
+
+.accordion-button::after {
+    filter: invert(65%) sepia(75%) saturate(500%) hue-rotate(335deg) brightness(95%);
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: invert(65%) sepia(75%) saturate(500%) hue-rotate(335deg) brightness(95%);
+}
+
+.accordion-body {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+}
+
+.btn {
+    border-color: black;
+    color: #ff6600;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+    color: black;
+}
+
+.btn_1 {
+    border-color: #ff6600;
+    color: #ff6600;
+    font-weight: 600;
+    align-content: center;
+}
+
+/* Animations */
+.slidedown {
+    animation: slidedown;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    transition: 0.4s all ease;
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .accordion-button {
+        padding: 15px;
+    }
+}

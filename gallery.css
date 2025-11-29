@@ -1,0 +1,41 @@
+.banner{
+  background-image: url(https://i.pinimg.com/736x/b9/61/b6/b961b6d81206f2829627d4a954415d36.jpg);
+  background-position: center;
+  background-size: cover;
+  height:500px;
+}
+.banner h1 {
+    color: #ff6600;
+    padding-top: 20vh;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.banner p {
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.gallery-card img {
+  transition: transform 0.4s, filter 0.4s;
+  border: 2px solid #2c2c2c;
+}
+.gallery-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7); 
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}

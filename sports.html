@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports & Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sports.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    
+/* ===== Navbar Section ===== */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+
+.dropdown-menu {
+  transition: all 0.3s ease;
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+  padding: 6px 0;
+}
+
+.navbar-logo {
+  color: #ff6600 !important;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 39px;
+  width: auto;
+  margin-right: 4px;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 13px;
+  padding: 8px 16px;
+}
+
+.nav-link:hover {
+  color: #ff6600 !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #000;
+  border: 1px solid #ff6600;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  color: #ff6600 !important;
+}
+
+/* Navbar Toggler (Mobile Menu Button) */
+.navbar-toggler {
+  border-color: #ff6600;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='orange' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .footer-links a:hover {
+    color: #ff6600;
+    padding-left: 5px;
+  }
+  .social-icon {
+    color: #ccc;
+    font-size: 1.3rem;
+    transition: 0.3s;
+  }
+
+  .social-icon:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+  }
+   
+</style>
+<body>
+    
+     <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-logo" href="#">
+        <img src="assets/images/videos/css/logo-removebg-preview.png" alt="Gym Logo">
+        Prime Fitness
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="workoutsDropdown" role="button" data-bs-toggle="dropdown">
+              Our-Offering
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="workoutsDropdown">
+              <li><a class="dropdown-item" href="cycling.html">Cycling</a></li>
+              <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+              <li><a class="dropdown-item" href="sports.html">Sports & Fitness</a></li>
+              <li><a class="dropdown-item" href="group exercise.html">Group Exercise</a></li>
+              <li><a class="dropdown-item" href="membership.html">Membership</a></li>
+              <li><a class="dropdown-item" href="salon and spa.html">Salon & Spa</a></li>
+              <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+              <li><a class="dropdown-item" href="equipments.html">Equipment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About-us</a></li>
+          <li class="nav-item"><a class="nav-link" href="FAQs.html">FAQ's</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Enquiry form</a></li>
+          <li class="nav-item"><a class="nav-link" href="sitemap.html">Site-Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <div class="background">
+    <img src="https://i.pinimg.com/736x/fe/0f/fb/fe0ffba4fd23e58f8321a80fc1877858.jpg" 
+         alt="Fitness Banner" 
+         class="img-fluid w-100">
+</div>
+
+    <div class="title position-absolute top-50 start-50 translate-middle text-center">
+        <h1 class="fw-bold slidedown ">Sports & Fitness</h1>
+        <p class="prg slideup text-light fs-5">Train smarter. Get stronger. Be unstoppable.</p>
+    </div>
+
+    <!-- Fitness section -->
+    <section class="py-5">
+        <div class="container  text-center">
+            <h2 class="mb-3 fw-bold fs-1">Our Fitness Programs</h2>
+            <p class="text-white mb-5">Helps you push your Limits! — From Beginner to Competitive Atheletes</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3 ">
+                        <i class="bi bi-bar-chart fs-1 mb-3 "></i>
+                        <h5>Strength Training</h5>
+                        <p class="text-light">Increase your <span class="focus">muscle power</span> with expert
+                            guidance.</p>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 ">
+                        <i class="bi bi-peace fs-1 mb-3 "></i>
+                        <h5>Functional Training</h5>
+                        <p class="text-light">Improve mobility, <span class="focus">flexibility</span> & everyday
+                            performance.</p>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 ">
+                        <i class="bi bi-heart-pulse fs-1 mb-3 "></i>
+                        <h5>Cardio Training</h5>
+                        <p class="text-light"> Boost <span class="focus">stamina</span> with treadmill, cycling & HIIT
+                            sessions.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><hr style="color: #ff6600;">
+    <!-- Fitness section End -->
+
+
+    <!-- Sports section Start -->
+    <section class="py-5 ">
+        <div class="container   ">
+            <div class="row flex-md-row-reverse align-items-left">
+
+                <div class="col-md-6 box-img-slide">
+                    <img class="rounded img-fluid " src="https://i.pinimg.com/1200x/61/69/34/6169347d429e83885946a153d6787363.jpg" alt="">
+                </div>
+                <div class="col-md-6 box-pnt-slide ">
+                    <h2 class="fw-bold  fs-1 pt-4 py-3">Boxing Training</h2>
+                    <p class="text-light">Build strength, speed, and focus — train your body and mind to move with
+                        precision and confidence.</p>
+
+                    <ul class="box-list text-light ">
+                        <li>Practice punch combinations with proper form.</li>
+                        <li>Improve footwork and balance.</li>
+                        <li>Build strength and core power.</li>
+                        <li>Train endurance with bag work and cardio.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section><hr style="color: #ff6600;">
+
+
+    <section class="py-5 ">
+        <div class="container   ">
+            <div class="row ">
+
+                <div class="col-md-6  ">
+                    <img class="rounded img-fluid box-img-slide " src="https://i.pinimg.com/1200x/92/39/c9/9239c99e001cbfdfbadbf37cafd0c34d.jpg" alt="">
+                </div>
+
+                <div class="col-md-6 box-pnt-slide">
+                    <h2 class="fw-bold  fs-1 pt-4 py-3">Football Training</h2>
+                    <p class="text-light">Boost your control, speed, and stamina — master every move and play with
+                        confidence on the field.</p>
+
+                    <ul class="box-list text-light ">
+                        <li>Master ball control and precise footwork.</li>
+                        <li>Improve passing, shooting, and accuracy.</li>
+                        <li>Build speed and agility with sprint drills.</li>
+                        <li>Increase stamina through endurance training.</li>
+                    </ul>
+
+                  
+            </div>
+        </div>
+    </section><hr style="color: #ff6600;">
+
+    <section class="py-5 ">
+        <div class="container   ">
+            <div class="row flex-md-row-reverse align-items-left">
+
+                <div class="col-md-6 box-img-slide ">
+                    <img class="rounded img-fluid" src="https://i.pinimg.com/736x/13/2d/68/132d686dbde928f30cb7eb02ef5c8bf8.jpg" alt="">
+                </div>
+
+                <div class="col-md-6 box-pnt-slide ">
+                    <h2 class="fw-bold  fs-1 pt-4 py-3">Basketball Training</h2>
+                    <p class="text-light">Enhance your dribbling, shooting, and agility — train hard to dominate the
+                        court with skill and confidence.</p>
+
+                    <ul class="box-list text-light ">
+                        <li>Improve dribbling and ball-handling skills.</li>
+                        <li>Practice shooting for accuracy and consistency.</li>
+                        <li>Build agility and quick footwork.</li>
+                        <li>Strengthen endurance with sprint and jump drills.</li>
+                    </ul>
+
+                    
+            </div>
+        </div>
+    </section> <hr style="color: #ff6600;">
+    <!-- Sports section End -->
+
+
+    
+
+    <!-- Goals Section Start -->
+    <section class="py-5 bg-black text-center" id="fitness-goals">
+        <div class="container">
+            <h2 class="fw-bold goal-h mb-4">Sports & Fitness Goals</h2>
+            <p class="text-light mb-5">Choose your goal — we’ll help you achieve it!</p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="goal-card p-4 rounded shadow-sm hover-line">
+                        <i class="fa-solid fa-fire fs-1  goal-icon"></i>
+                        <h5 class="mt-3 text-white fw-bold">Weight Loss</h5>
+                        <p class="text-light">Burn fat efficiently with HIIT & cardio training.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="goal-card p-4 rounded shadow-sm hover-line">
+                        <i class="fa-solid fa-dumbbell fs-1  goal-icon"></i>
+                        <h5 class="mt-3 text-white fw-bold">Muscle Gain</h5>
+                        <p class="text-light">Build strength and shape with resistance training.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="">
+                        <div class="goal-card p-4 rounded shadow-sm hover-line">
+                            <i class="fa-solid fa-heart-pulse fs-1   goal-icon"></i>
+                            <h5 class="mt-3 text-white fw-bold">Endurance & Stamina</h5>
+                            <p class="text-light">Train your body for long-lasting energy & power.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Goals Section End -->
+
+
+    <hr style="color: #ff6600;">
+
+    <!-- Membership section -->
+    <section class="py-5 sec">
+        <div class="container text-center">
+            <h1 class="fw-bold mb-3 h">Membership Plans</h1>
+            <p class="text-white mb-5 fs-5">Start your journey with One of these Plans.</p>
+
+            <div class="row g-4 m-sec">
+
+                <div class="col-md-3">
+                    <div class="CARD M-slideup p-4 rounded">
+                        <h4 class="fw-bold">Basic</h4>
+                        <p class="text-light">Gym + Classes</p>
+                        <h3 class="fw-bold">$25 / Month</h3>
+                        <a href="membership.html?category=Sports&plan=Basic" class="btn btn-outline-light mt-3">Choose Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="CARD M-slideup p-4 rounded">
+                        <h4 class="fw-bold">Standard</h4>
+                        <p class="text-light">Gym + Cardio + classes</p>
+                        <h3 class="fw-bold">$45 / Month</h3>
+                        <a href="membership.html?category=Sports&plan=Standard" class="btn btn-outline-light mt-3">Choose Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="CARD p-4 M-slideup rounded">
+                        <h4 class="fw-bold">Pro</h4>
+                        <p class="text-light">Gym + Cardio + Nutritionist</p>
+                        <h3 class="fw-bold">$70 / Month</h3>
+                        <a href="membership.html?category=Sports&plan=Pro" class="btn btn-outline-light mt-3">Choose Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="CARD p-4 rounded M-slideup ">
+                        <h4 class="fw-bold">Elite</h4>
+                        <p class="text-light">All Access + Personal Trainer</p>
+                        <h3 class="fw-bold">$100 / Month</h3>
+                        <a href="membership.html?category=Sports&plan=Elite" class="btn btn-outline-light mt-3">Choose Plan</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><hr style="color: #ff6600;">
+    <!-- Membership section End-->
+
+<footer class="text-light pt-5 pb-3" style="background-color: #000;">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6">
+        <a class="navbar-logo" href="#">
+        <img src="assets/images/videos/css/logo-removebg-preview.png" alt="Gym Logo">
+        Prime Fitness
+      </a>
+        <p class="mt-3" style="color:#ccc;">
+          Transform your body, transform your life. Join our fitness community and achieve your goals with professional training and motivation.
+        </p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-6">
+        <h5 class="fw-bold" style="color:#ff6600;">Quick Links</h5>
+        <ul class="list-unstyled mt-3 footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="FAQs.html">FAQs</a></li>
+          <li><a href="equipments.html">enquiry</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Programs -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold" style="color:#ff6600;">Our Programs</h5>
+        <ul class="list-unstyled mt-3 footer-links">
+          <li><a href="cycling.html">Cycling</a></li>
+          <li><a href="swimming.html">Swimming</a></li>
+          <li><a href="group exercise.html">Group Exercise</a></li>
+          <li><a href="membership.html">membership</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h5 class="fw-bold" style="color:#ff6600;">Contact Us</h5>
+        <ul class="list-unstyled mt-3" style="color:#ccc;">
+          <li><i class="bi bi-geo-alt-fill me-2" style="color:#ff6600;"></i>123 Prime Street, Karachi</li>
+          <li><i class="bi bi-telephone-fill me-2" style="color:#ff6600;"></i>+92 300 1234567</li>
+          <li><i class="bi bi-envelope-fill me-2" style="color:#ff6600;"></i>info@primefitness.com</li>
+          <li><i class="bi bi-clock-fill me-2" style="color:#ff6600;"></i>Mon - Sat: 6:00 AM - 9:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 pt-3 border-top border-secondary">
+      <p class="mb-0" style="color:#999;">
+        © 2025 <span style="color:#ff6600;">Prime Fitness</span>. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+    <!-- Javascript -->
+    <script>
+        const slideEls = document.querySelectorAll('.M-slideup, .box-img-slide, .box-pnt-slide');
+
+        function revealOnScroll() {
+            slideEls.forEach(el => {
+                let rect = el.getBoundingClientRect().top;
+                if (rect < window.innerHeight - 100) {
+                    el.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+    </script>
+    <!-- Javascript End-->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+ 
+</html>

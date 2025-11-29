@@ -1,0 +1,235 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.slidedown {
+    animation: slidedown;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    transition: 0.4s all ease;
+    color:#ff6600;
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2{
+    color:#ff6600
+}
+
+.slideup {
+    animation: slideup;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    transition: 0.4s all ease;
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.M-slideup {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.M-slideup.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.CARD {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background-color: #1a1a1a;
+}
+
+.CARD:hover {
+    border-color:#ff6600;
+    transform: scale(1.01);
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px #ff6600 solid;
+    color:#ff6600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    color: #ff6600;
+}
+
+.btn-1:hover {
+    color: black;
+    background-color: #ff6600;
+
+}
+
+.card {
+    transition: all .3s ease;
+    background-color: #1a1a1a;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ff6600;
+}
+
+.s-content {
+    background-color: #1a1a1a;
+    transition: all ease 0.4s;
+    border: transparent 2px solid;
+
+}
+
+.s-content:hover {
+    transform: translateY(-5px);
+    border-color: #ff6600;
+}
+
+.bi {
+    color: white;
+}
+
+.f-icon {
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.f-icon:hover {
+    text-shadow: 0 0 10px #ff6600;
+}
+
+.goal-card {
+    border: transparent 2px solid;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    /* border-top: #e3994a 2px solid; */
+    border-bottom: #ff6600
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #ff6600;
+}
+
+.goal-icon,
+.goal-h {
+    color:#ff6600 ;
+}
+.h{
+    color:#ff6600
+}
+.m-sec{
+    color: #ff6600
+}
+a {
+    text-decoration: none;
+}
+
+.hover-line {
+    position: relative;
+}
+
+
+.hover-line::before,
+.hover-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff6600;
+    transition: color 0.4s ease, width 0.4s ease;
+}
+
+.hover-line::before {
+    left: 50%;
+}
+
+.hover-line::after {
+    right: 50%;
+}
+
+.hover-line:hover::before,
+.hover-line:hover::after {
+    width: 50%;
+}
+
+.box-list {
+    color: white;
+}
+
+.box-img-slide {
+    /* transform: translateX(50px); */
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.box-img-slide.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.box-pnt-slide {
+    transform: translateX(-80px);
+    transition: opacity 0.5s ease, transform 0.7s ease;
+    opacity: 0;
+}
+.box-pnt-slide.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+ul li::marker{
+    color: #ff6600;
+}
+h5{
+    color: #ff6600;
+}
+.s-btn{
+    border: #ff6600 1.5px solid;
+    transition: 0.3s ease;
+}
+.s-btn:hover{
+    border: 1.5px solid white;
+    transform: scale(1.03);
+}
