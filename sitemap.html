@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campus Connect - Sitemap</title>
-  <style>
 
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -13,146 +13,153 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Background with a gym image */
+    
     body {
-      background: url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600") no-repeat center center/cover;
-      color: white;
+      background: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=60&w=1200")
+        center/cover no-repeat;
+      min-height: 100vh;
       padding: 20px;
+      color: white;
     }
 
-    /* Dark overlay for readability */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: -1;
-    }
-
-    /* Page title */
     h1 {
       text-align: center;
       margin-bottom: 20px;
       color: #ff6600;
+      font-size: 32px;
+      letter-spacing: 1px;
     }
 
-    /* Sitemap main box */
+    /* Main sitemap container */
     .sitemap {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 10px;
+      background: rgba(0,0,0,0.55);
       padding: 20px;
+      border-radius: 12px;
       border: 1px solid #ff6600;
+      backdrop-filter: blur(5px);
     }
 
     /* Section boxes */
     details {
-      margin: 10px 0;
-      background-color: rgba(255, 102, 0, 0.1);
+      margin: 12px 0;
+      background: rgba(255, 102, 0, 0.15);
       border: 1px solid #ff6600;
-      border-radius: 5px;
+      border-radius: 6px;
+      overflow: hidden;
+      transition: 0.3s;
     }
 
-    /* Section titles */
     summary {
-      padding: 10px 15px;
+      padding: 12px 16px;
       cursor: pointer;
+      font-size: 18px;
       font-weight: bold;
       color: #ff6600;
+      list-style: none;
+    }
+    /* Custom arrow */
+    summary::after {
+      float: right;
+      transition: 0.4s;
     }
 
-    /* List inside each section */
+    details[open] summary::after {
+      transform: rotate(180deg);
+    }
+
+    /* List styling */
     ul {
       list-style: none;
-      padding: 10px 25px;
-      background-color: rgba(0, 0, 0, 0.4);
+      padding: 12px 25px;
+      background: rgba(0, 0, 0, 0.35);
+      animation: fadeIn 0.5s ease;
     }
 
-    /* List items */
     ul li {
-      padding: 5px 0;
+      padding: 6px 0;
       font-size: 15px;
       color: #ddd;
     }
 
-    /* Add a small orange arrow before each item */
     ul li::before {
       content: "▶ ";
       color: #ff6600;
+      font-size: 14px;
     }
 
-    /* Responsive design for small screens */
+    /* Animation for opening content */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
     @media (max-width: 600px) {
-      .sitemap {
-        padding: 15px;
-      }
-      h1 {
-        font-size: 22px;
-      }
-      summary {
-        font-size: 15px;
-      }
+      h1 { font-size: 26px; }
+      summary { font-size: 16px; }
+      .sitemap { padding: 15px; }
+      ul li { font-size: 14px; }
     }
   </style>
 </head>
 <body>
-      
+
   <h1>SITEMAP</h1>
 
   <div class="sitemap">
+
     <details>
       <summary>Homepage</summary>
       <ul>
         <li>Our fitness activities</li>
         <li>Our services</li>
         <li>Motivation section</li>
-        <li>Our members comment</li>
+        <li>Members' feedback</li>
       </ul>
     </details>
 
     <details>
-      <summary>our offerings</summary>
+      <summary>Our Offerings</summary>
       <ul>
         <li>Cycling page</li>
         <li>Swimming page</li>
-        <li>Sports and fitness page</li>
+        <li>Sports & fitness page</li>
         <li>Membership page</li>
-         <li>Salon and Spa page</li>
-          <li>Gallery page</li>
-           <li>Equipments page</li>
+        <li>Salon & Spa page</li>
+        <li>Gallery</li>
+        <li>Equipment</li>
       </ul>
     </details>
 
     <details>
-      <summary>About-us</summary>
+      <summary>About Us</summary>
       <ul>
         <li>Our story</li>
-        <li>Our value</li>
-         <li>Our people</li>
-          <li>Our culture</li>
+        <li>Our values</li>
+        <li>Our people</li>
+        <li>Our culture</li>
       </ul>
     </details>
 
     <details>
-      <summary>FAqs</summary>
+      <summary>FAQs</summary>
       <ul>
-        <li>QNA</li>
-        <li>contact us button</li>
+        <li>Questions & Answers</li>
+        <li>Contact Us</li>
       </ul>
     </details>
 
     <details>
-      <summary>Enquiry form</summary>
+      <summary>Enquiry Form</summary>
       <ul>
-        <li>form</li>
+        <li>Registration / enquiry form</li>
       </ul>
     </details>
 
-  
   </div>
+
 </body>
 </html>
