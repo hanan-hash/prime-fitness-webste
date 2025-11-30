@@ -16,16 +16,25 @@
       background-color: black;
     }
 
-    .banner {
-      background-image: url(assets/aboutbanner\ \(2\).png);
-      background-size: cover;
-      height: 80vh;
-      background-position: center;
+  .hero-section {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://i.pinimg.com/1200x/ce/8d/d9/ce8dd92f687aa991c08c8eeb8acb34df.jpg') center/cover no-repeat;
+      text-align: center;
+      color: white;
+      padding: 130px 20px 100px;
+      margin-top: 70px;
     }
-  img {
-    max-width: 100%;
-    display: block;
-  }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ff6600;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-top: 15px;
+     }
     /* Fix bottom spacing for mobile */
     @media (max-width: 768px) {
       .show-image img {
@@ -105,16 +114,10 @@
   </nav>
   <div class="container-fluid main">
     <!-- Banner Section -->
-    <div class="banner">
-      <h1 class="display-5 text-center" data-aos="fade-down"
-        style="font-family: sans-serif; color: rgb(253, 253, 253); padding-top: 15vw; font-weight: 800;">
-        WELCOME TO OUR
-      </h1>
-
-      <h1 class="display-6 text-center text-bold" data-aos="fade-up"
-        style="font-family: sans-serif; color:#ff6600; font-weight: 700;">
-        PRIME FITNESS
-      </h1>
+   <section class="hero-section">
+  <h1 class="animate_animated animatefadeInDown animate_slow">Welcome </h1>
+  <p class="animate_animated animatefadeInUp animate_delay-1s">Our About-Us.</p>
+</section>
     </div>
 
     <!-- Story Section -->
