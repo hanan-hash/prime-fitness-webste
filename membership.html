@@ -150,28 +150,51 @@
 
     <!-- Membership Form -->
     <form id="form" onsubmit="return submitForm()">
-        <div class="mb-3">
-            <label class="form-label">Category:</label>
-            <input type="text" class="form-control" id="category" readonly>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Plan:</label>
-            <input type="text" class="form-control" id="plan" readonly>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Name:</label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Phone:</label>
-            <input type="text" class="form-control" id="phone" required>
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <button type="submit" class="btn btn-submit w-100">Submit</button>
-    </form>
+
+    <div class="mb-3">
+        <label class="form-label">Category:</label>
+        <input type="text" class="form-control"
+               id="category" required
+               pattern="[A-Za-z ]{3,30}"
+               title="Only letters allowed — 3 to 30 characters">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Plan:</label>
+        <input type="text" class="form-control"
+               id="plan" required
+               pattern="[A-Za-z0-9 ]{3,30}"
+               title="Only letters & numbers allowed — 3 to 30 characters">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Name:</label>
+        <input type="text" class="form-control"
+               id="name" required
+               pattern="[A-Za-z ]{3,30}"
+               title="Only letters allowed — 3 to 30 characters">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Phone:</label>
+        <input type="text" class="form-control"
+               id="phone" required
+               pattern="03[0-9]{9}"
+               title="Phone number must start with 03 and contain 11 digits">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email:</label>
+        <input type="email" class="form-control"
+               id="email" required
+               pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+               title="Enter a valid email, e.g. example@gmail.com">
+    </div>
+
+    <button type="submit" class="btn btn-submit w-100">Submit</button>
+
+</form>
+
     <div class="row" id="result"></div>
 
 </div>
